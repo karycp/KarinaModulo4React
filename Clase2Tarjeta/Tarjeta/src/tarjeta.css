@@ -1,0 +1,35 @@
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+   background-color: rgb(230, 192, 192);
+   height: 800px;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    border: 2px solid rgb(175, 29, 29);
+    border-radius: 20px;
+    
+    }
+.tarjeta > img{
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+}
+
+.titulo{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    }
+
+
+ 
