@@ -1,35 +1,42 @@
 
 .container{
    display: flex;
-   justify-content: center;
-   align-items:center;
-   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 50px;
    background-color: rgb(230, 192, 192);
    height: 800px;
 }
 
 .tarjeta{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     width: 350px;
-    height: 400px;
+    height: 450px;
     border: 2px solid rgb(175, 29, 29);
     border-radius: 20px;
     
     }
-.tarjeta > img{
-    border-radius: 20px;
-    width: 350px;
-    height: 400px;
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid red;
+    
 }
 
 .titulo{
     color: red;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     }
+
+.descripcion{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: bold;
+   }
 
 
  

@@ -1,18 +1,55 @@
 import React from 'react'
-import imagen from './assets/rick.jpg'
+import beth from './assets/BethSmith.jpg'
+import Steve from './assets/SteveJobs.jpg'
+import Bill from './assets/BillGates.jpg'
 import '../src/tarjeta.css'
+import Title from  '../src/Components/Titulo'
+import Imagen from '../src/Components/Imagen'
+
+import Description from '../src/Components/Descripcion'
 
 function App(){
   return(
-    <>
+  
       <div className='container'>
-          <div className='tarjeta'>
-            <h1 className='titulo' >Soy Un Ricky!!</h1>
-            <img src={imagen} alt='Imagen de Ricky'></img>
-            <h1 className='titulo' >Aca va la descripción del Ricky!</h1>
+        <div className='tarjeta'>
+          <div className='titulo'>
+             <Title title = {'Beth Smith'}/> 
           </div>
-      </div>
-    </>
+          <div>
+            <Imagen image = {beth}/>
+          </div>
+          <div className='descripcion'>
+            <Description gender = {'Femenino'} state={'Viva'}/>
+          </div>
+        </div>
+
+        <div className='tarjeta'>
+          <div className='titulo'>
+             <Title title = {'Steve Jobs'}/> 
+          </div>
+          <div>
+            <Imagen image = {Steve}/>
+          </div>
+          <div className='descripcion'>
+            <Description gender = {'Masculino'} state={'Fallecido'}/>
+          </div>
+        </div>
+
+        
+        <div className='tarjeta'>
+          <div className='titulo'>
+             <Title title = {'Bill Gates'}/> 
+          </div>
+          <div>
+            <Imagen image = {Bill}/>
+          </div>
+          <div className='descripcion'>
+            <Description gender = {'Masculino'} state={'Vivo'}/>
+          </div>
+        </div>
+     </div>
+    
   );
 }
 
