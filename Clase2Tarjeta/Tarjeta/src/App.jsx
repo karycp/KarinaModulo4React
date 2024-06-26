@@ -17,7 +17,7 @@ function App(){
              <Title title = {'Beth Smith'}/> 
           </div>
           <div>
-            <Imagen image = {beth}/>
+            <Imagen image = {beth} alte={'Personaje de Ricy'}/>
           </div>
           <div className='descripcion'>
             <Description gender = {'Femenino'} state={'Viva'}/>
@@ -29,7 +29,7 @@ function App(){
              <Title title = {'Steve Jobs'}/> 
           </div>
           <div>
-            <Imagen image = {Steve}/>
+            <Imagen image = {Steve} alte={'Steve Jobs'}/>
           </div>
           <div className='descripcion'>
             <Description gender = {'Masculino'} state={'Fallecido'}/>
@@ -42,7 +42,7 @@ function App(){
              <Title title = {'Bill Gates'}/> 
           </div>
           <div>
-            <Imagen image = {Bill}/>
+            <Imagen image = {Bill} alte={'Bill G'}/>
           </div>
           <div className='descripcion'>
             <Description gender = {'Masculino'} state={'Vivo'}/>
