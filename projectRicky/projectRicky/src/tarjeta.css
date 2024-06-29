@@ -6,10 +6,8 @@
    flex-wrap: wrap;
    gap: 50px;
    background-color: rosybrown;
-   width: 960px;
-   height: 820px;
-   margin: auto;
-   margin-left: 500px;
+   width: 80%;
+   margin-left: 250px;
          
 }
 
@@ -43,6 +41,14 @@
     color: blueviolet;
     font-weight: bold;
    }
+   .btn{
+    background-color: violet;
+    color:beige;
+    padding: 20px;
+    font-size: 30px;
+    border: 10px solid blueviolet;
 
+   }
+   
 
  

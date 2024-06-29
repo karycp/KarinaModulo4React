@@ -5,43 +5,42 @@ import Imagen from '../src/Components/Imagen'
 import Description from '../src/Components/Descripcion'
 
 function App(){
-  const [name, setName] = useState(" ");
-  const [image, setImage] = useState(" ");
-  const [gender, setGender]= useState(" ");
-  const [status, setStatus] =useState(" ");
+  const [characterList, setCharacterList] = useState([]);
+  const [paginacion, setPaginacion] = useState(1);
 
-  const rickAndMortyCharacterId = 2;
-  console.log(name);
-  
   useEffect( ()=>{
-    fetch("https://rickandmortyapi.com/api/character/" + rickAndMortyCharacterId)
+    fetch(`https://rickandmortyapi.com/api/character/?page=${paginacion}`)
     .then ((response)=> response.json()) 
-    .then ((results) => { {/*esta variable results solo exixte en esta línea*/}
-      setImage(results.image)
-      setName(results.name)
-      setGender(results.gender)
-      setStatus(results.status)
-    })
-        
-  }, []
-  );
-  return(
+    .then ((data) =>
+      setCharacterList(data.results)
+      
+    )
+      }, [paginacion] )
   
-      <div className='container'>
-        <div className='tarjeta'>
-          <div className='titulo'>
-             <Title title = {name}/> 
-          </div>
-          <div>
-            <Imagen image = {image} alte={'Personaje de Ricy'}/>
-          </div>
-          <div className='descripcion'>
-            <Description gender = {gender} state={status}/>
-          </div>
-        </div>
-      </div>
-    
-  );
+  return (
+        <div className='container'>
+       <>
+             
+           {
+            characterList.length !== 0 && characterList.map((character)=>(
+              <div className='tarjeta'>
+              <div className='titulo'>
+                <Title  title = {character.name}/> 
+              </div>
+              <div>
+                <Imagen  image = {character.image} alte={'Personaje de Ricy'}/>
+              </div>
+              <div className='descripcion'>
+                <Description  gender = {character.gender} state={character.status}/>
+              </div>
+            </div>
+            ))
+            }
+            <button className='btn' onClick={()=>setPaginacion(paginacion-1)} >PAGINA ANTERIOR</button>
+            <button className='btn' onClick={()=>setPaginacion(paginacion+1)}>PÁGINA SIGUIENTE</button>
+           
+       </>
+       </div>
+ )  
 }
-
 export default App
