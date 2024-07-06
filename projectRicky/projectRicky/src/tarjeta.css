@@ -8,9 +8,24 @@
    background-color: rosybrown;
    width: 80%;
    margin-left: 250px;
-         
+    
 }
-
+.containerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: rosybrown;
+    margin-left: 250px;
+    flex-wrap: wrap;
+}
+.btn{
+    background-color: violet;
+    color:beige;
+    padding: 10px;
+    font-size: 30px;
+    border: 10px solid blueviolet;
+    }
 .tarjeta{
     display: flex;
     flex-direction:column;
@@ -41,14 +56,31 @@
     color: blueviolet;
     font-weight: bold;
    }
-   .btn{
-    background-color: violet;
-    color:beige;
-    padding: 20px;
-    font-size: 30px;
-    border: 10px solid blueviolet;
-
-   }
+  
+  .h1{
+    margin-left: 20%;
+  }
+  .h2{
+    font-size: 10px;
+    color: white;
+  }
    
-
+ .link{
+    position: sticky;
+    font-size: 40px;
+    color:green;
+      }
  
+
+ .ul{
+    
+    background-color: bisque;
+   
+ }
+ .li{
+    
+    display: inline-block;
+    padding: 10px 26px;
+    font-size: 80px;
+    
+ }
