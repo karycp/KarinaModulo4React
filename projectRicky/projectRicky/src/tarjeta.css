@@ -84,3 +84,36 @@
     font-size: 80px;
     
  }
+ .btnFiltro{
+    
+    height: 80px;
+    width: 250px;
+    background-color: aquamarine;
+    border-radius: 25px;
+    padding: 15px 35px;
+    font-size: 35px;
+    cursor: pointer;
+ }
+ .input{
+     
+    height: 70px;
+    width: 400px;
+    font-size: 30px;
+    border-radius: 25px;
+    border: 2px solid black;
+
+ }
+ .select{
+    width: 300px;
+    border-radius: 25px;
+    font-size: 30px;
+ }
+
+ 
+
+ .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:50px;
+     }

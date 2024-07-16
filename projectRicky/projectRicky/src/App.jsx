@@ -9,7 +9,8 @@ import '../src/tarjeta.css'
 
 
 function App(){
-    
+  
+  
   return (
     
      <Router>
@@ -27,6 +28,7 @@ function App(){
             </li>
           </ul>
         </nav>
+        
     
       <Routes>
         <Route path='/' exact element={<Home/>} />
